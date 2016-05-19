@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+        <script src="plug.js"></script>
+        <script>
+            Plug.use("/config.json", "config");
+            Plug.go();
+        </script>
+        <title plug="config.title"></title>
+    </head>
+    <body>
+        <h1 plug="config.title"></h1>
+        <p plug="config.description"></p>
+        <ul yolk="#y-list /articles">
+            <li yolk="name"></li>
+        </ul>
+    </body>
+</html>
